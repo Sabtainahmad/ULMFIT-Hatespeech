@@ -1,0 +1,10 @@
+Accuracy:
+0.852861
+
+Classes:Sexism, Racism, none
+
+Confusion matrix
+	0	1	2
+0	1595	87	102
+1	68	234	1
+2	118	2	362

@@ -1,0 +1,10 @@
+Accuracy:
+0.763997
+
+Classes: None, Offensive, Hatespeech
+
+Confusion matrix
+	0	1	 2
+0	168	16	 145
+1	24	1063 72
+2	182	109	 543

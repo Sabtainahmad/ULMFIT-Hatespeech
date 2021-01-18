@@ -1,0 +1,10 @@
+Accuracy:
+0.865707
+
+Classes:Bullying: yes, no
+
+Confusion matrix
+	0	1	
+0	1587	205
+1	140	637	
+	

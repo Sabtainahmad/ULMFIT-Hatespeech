@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{{ title }}</title>
+	<!-- Make super cool emojis/ latex -->
+	<meta charset="utf-8">
+	<!-- proper sizing on mobile -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- if there is inline css in header, css file below won't work -->
+	<link rel="icon" href="{% static 'global/img/j95_logo_icon.ico' %}"/>
+	<link rel="stylesheet" href="{% static 'global/css/bootswatch_flatly.css' %}"/>
+	<link rel="stylesheet" href="{% static 'global/css/custom.css' %}"/>
+	{% block custom_css %}
+	{% endblock %}
+  <!-- this needs to be put in templates, so that the template tag gets rendered by django -->
+	<script>var csrf_token="{{ csrf_token }}";</script> 
+</head>
+<body>
+
+{% block navbar %}
+{% endblock %}
+
+<!--<div id="content" style="margin-left: 2%; margin-right: 2%; margin-bottom: 2%; margin-top:1%">-->
+<div id="content">
+{% block content %}
+{% endblock %}
+</div>
+
+{% block default_scripts%}
+{% endblock %}
+
+{% block custom_scripts%}
+{% endblock %}
+
+</body>
+</html>

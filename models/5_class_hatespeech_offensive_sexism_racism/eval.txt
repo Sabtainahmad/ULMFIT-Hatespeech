@@ -1,0 +1,12 @@
+Accuracy:
+0.785133
+
+Classes:Sexism, Racism, hate speech, offensive languae, none
+
+Confusion matrix
+	0	1	2	3	4
+0	201	13	187	0	0
+1	16	1425	48	47	75
+2	164	53	522	0	2
+3	2	66	2	265	3
+4	0	84	3	1	386
